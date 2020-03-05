@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import tkinter
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
@@ -103,3 +104,8 @@ Y_Train = SC_Y.fit_transform(Y_Train)
 Regressor = LinearRegression().fit(X_Train,Y_Train)
 Y_Pred = Regressor.predict(X_Test)
 
+############################GUI Portion#########################################################################
+gui = tkinter.Tk()
+label = tkinter.Label(gui,text = "Gender")
+label.pack()
+gui.mainloop()
