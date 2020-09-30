@@ -48,7 +48,7 @@ Y_Pred = classifier.predict(X_test)
 from sklearn.metrics import accuracy_score
 print("The accuracy attained using Support Vector Machine is " + str(accuracy_score(y_test, Y_Pred) * 100) + " percent")
 
-"""Fitting Naive Bayes Regression to the Training Set"""
+"""Fitting Naive Bayes Classification to the Training Set"""
 
 from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
